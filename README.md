@@ -12,7 +12,7 @@ WEBSITE: https://www.vision.ee.ethz.ch/datasets_extra/food-101/
 
 DATASET: http://data.vision.ee.ethz.ch/cvl/food-101.tar.gz
 
-Download food-101.tar.gz and place the extracted files into datasets/food-101 directory as follows:
+Download `food-101.tar.gz` and place the extracted files into `datasets/food-101` directory as follows:
 ```
 ├── ...
 └── datasets 

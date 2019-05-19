@@ -10,19 +10,18 @@ This project is written in python 3.6 and Pytorch and assumes you have a GPU.
 
 WEBSITE: https://www.vision.ee.ethz.ch/datasets_extra/food-101/
 DATASET: http://data.vision.ee.ethz.ch/cvl/food-101.tar.gz
-Download food-101.tar.gz and unzip it and copy it inside food-101 directory as follows:
+Download food-101.tar.gz and place the extracted files into datasets/food-101 directory as follows:
 ```
 ├── ...
 └── datasets 
-  └── datasets
-    └── food-101
-       └── meta               
-       ├── license_agreement.txt 
-       ├── README.txt 
-       └── images
-          ├── apple_pie
-          ├── ...
-          └── waffle
+  └── food-101
+     └── meta               
+     ├── license_agreement.txt 
+     ├── README.txt 
+     └── images
+        ├── apple_pie
+        ├── ...
+        └── waffle
 ```    
 Run: 
 ```
@@ -32,7 +31,8 @@ python3 main.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train
 
 **mini_ImageNet**
 
-Create images.zip file and copy it inside mini_imagenet directory:
+Download: https://drive.google.com/file/d/0B3Irx3uQNoBMQ1FlNXJsZUdYWEE/view, 
+Place images.zip file inside mini_imagenet directory:
 ```
 .
 ├── ...
@@ -53,7 +53,7 @@ The images.zip file must contain the splits and images in the following format:
       ├── ...
       └── n1313361300001299.jpg
 ```
-The splits {test.csv, train.csv, val.csv} are in mini_imagenet folder. 
+The splits {test.csv, train.csv, val.csv} are in datasets/mini_imagenet folder. 
 
 Run: 
 ```
@@ -63,7 +63,8 @@ python3 main.py --exp_name $experiment --dataset mini_imagenet --test_N_way 5 --
 
 **Omniglot**
 
-Download images_background.zip and images_evaluation.zip files from  and copy it inside the omniglot directory:
+Download : https://github.com/brendenlake/omniglot/tree/master/python, 
+Download images_background.zip and images_evaluation.zip files and copy it inside the compressed/omniglot directory:
 ```
 .
 ├── ...

@@ -9,7 +9,9 @@ This project is written in python 3.6 and Pytorch and assumes you have a GPU.
 **Food-101**
 
 WEBSITE: https://www.vision.ee.ethz.ch/datasets_extra/food-101/
+
 DATASET: http://data.vision.ee.ethz.ch/cvl/food-101.tar.gz
+
 Download food-101.tar.gz and place the extracted files into datasets/food-101 directory as follows:
 ```
 ├── ...
@@ -32,7 +34,8 @@ python3 main.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train
 **mini_ImageNet**
 
 Download: https://drive.google.com/file/d/0B3Irx3uQNoBMQ1FlNXJsZUdYWEE/view, 
-Place images.zip file inside mini_imagenet directory:
+
+Place `images.zip` file inside `compressed/mini_imagenet` directory:
 ```
 .
 ├── ...
@@ -42,7 +45,7 @@ Place images.zip file inside mini_imagenet directory:
          └── images.zip
 ```
 
-The images.zip file must contain the splits and images in the following format:
+The `images.zip` file must contain the splits and images in the following format:
 ```
 ── images.zip
    ├── test.csv                
@@ -53,7 +56,7 @@ The images.zip file must contain the splits and images in the following format:
       ├── ...
       └── n1313361300001299.jpg
 ```
-The splits {test.csv, train.csv, val.csv} are in datasets/mini_imagenet folder. 
+The splits {test.csv, train.csv, val.csv} are inside `datasets/mini_imagenet` directory. 
 
 Run: 
 ```
@@ -64,7 +67,8 @@ python3 main.py --exp_name $experiment --dataset mini_imagenet --test_N_way 5 --
 **Omniglot**
 
 Download : https://github.com/brendenlake/omniglot/tree/master/python, 
-Download images_background.zip and images_evaluation.zip files and copy it inside the compressed/omniglot directory:
+
+Download `images_background.zip` and `images_evaluation.zip` files and copy it inside the `compressed/omniglot` directory:
 ```
 .
 ├── ...

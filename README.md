@@ -28,7 +28,7 @@ Download `food-101.tar.gz` and place the extracted files into `datasets/food-101
 Run: 
 ```
 experiment = food101_N5_S5
-python3 main.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train_N_way 5 --train_N_shots 5 --test_N_shots 5 --batch_size 16  --dec_lr=10000  --iterations 80000
+python3 mainGNN.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train_N_way 5 --train_N_shots 5 --test_N_shots 5 --batch_size 16  --dec_lr=10000  --iterations 80000
 ```
 
 **mini_ImageNet**
@@ -61,7 +61,7 @@ The splits {test.csv, train.csv, val.csv} are inside `datasets/mini_imagenet` di
 Run: 
 ```
 experiment = mini_imagenet_N5_S1
-python3 main.py --exp_name $experiment --dataset mini_imagenet --test_N_way 5 --train_N_way 5 --train_N_shots 1 --test_N_shots 1 --batch_size 16  --dec_lr=10000  --iterations 80000
+python3 mainGNN.py --exp_name $experiment --dataset mini_imagenet --test_N_way 5 --train_N_way 5 --train_N_shots 1 --test_N_shots 1 --batch_size 16  --dec_lr=10000  --iterations 80000
 ```
 
 **Omniglot**
@@ -82,5 +82,5 @@ Download `images_background.zip` and `images_evaluation.zip` files and copy it i
 Run: 
 ```
 experiment = omniglot_N20_S5
-python3 main.py --exp_name $experiment --dataset omniglot --test_N_way 20 --train_N_way 20 --train_N_shots 5 --test_N_shots 5 --batch_size 16  --dec_lr=10000  --iterations 80000
+python3 mainGNN.py --exp_name $experiment --dataset omniglot --test_N_way 20 --train_N_way 20 --train_N_shots 5 --test_N_shots 5 --batch_size 16  --dec_lr=10000  --iterations 80000
 ```

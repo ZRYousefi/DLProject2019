@@ -1,8 +1,13 @@
 # DLProject2019
-Deep Learning Project_E!=m^2z
+
+This repository contains clean, readable and tested code for Deep learning course project. 
+The aim is to reproduce few-shot learning methods for food-101, mini_imagenet and omniglot datasets.
+
+This project is written in python 3.6 and Pytorch and assumes you have a GPU.
 
 
 **Food-101**
+
 WEBSITE: https://www.vision.ee.ethz.ch/datasets_extra/food-101/
 DATASET: http://data.vision.ee.ethz.ch/cvl/food-101.tar.gz
 Download food-101.tar.gz and unzip it and copy it inside food-101 directory as follows:
@@ -26,6 +31,7 @@ python3 main.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train
 ```
 
 **mini_ImageNet**
+
 Create images.zip file and copy it inside mini_imagenet directory:
 ```
 .

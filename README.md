@@ -3,7 +3,7 @@
 This repository contains clean, readable and tested code for Deep learning course project. 
 The aim is to reproduce few-shot learning methods for food-101, mini_imagenet and omniglot datasets.
 
-This project is written in python 3.6 and Pytorch and assumes you have a GPU.
+This project is written in python 3.6 and assumes you have a GPU.
 
 
 **Food-101**

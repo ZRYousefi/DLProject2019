@@ -12,4 +12,6 @@ fnmatch
 PIL
 pathlib
 shutil
+tensorflow
+
 

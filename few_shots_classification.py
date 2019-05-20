@@ -2,7 +2,7 @@ from tensorflow import keras
 # from tensorflow.python import keras
 import numpy as np
 from tensorflow.keras import backend as K
-
+import argparse
 
 def euclidean_distance(vects):
     x, y = vects
@@ -104,10 +104,17 @@ def siamese_generator(root_image, test_img_root=None, target_size=(224, 224), ba
         left_x, left_y = next(train_left_generator)
         yield [left_x, right_x], np.equal(left_y, right_y).all(axis=1).astype(int)
 
-
+def args_params():
+    args = argparse.ArgumentParser()
+    args.add_argument('--train-img-dir',type=str, required=True)
+    args.add_argument('--test-img-dir', type=str,required=True)
+   
+    return args
 if __name__ == '__main__':
-    dest_root_image = r'/l/workspace/dataset/asghar/train/images'
-    test_root_image = r'/l/workspace/dataset/asghar/test/images'
+    params = args_params()
+    ar = params.parse_args()
+    dest_root_image = ar.train_img_dir#r'/l/workspace/dataset/asghar/train/images'
+    test_root_image = ar.test_img_dir#r'/l/workspace/dataset/asghar/test/images'
     test_right_generator = keras.preprocessing.image.ImageDataGenerator(
             rescale=1.0 / 255).flow_from_directory(test_root_image, seed=8, target_size=(128, 128), class_mode='sparse',
                                                    batch_size=1)

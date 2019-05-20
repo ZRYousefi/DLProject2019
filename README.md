@@ -30,7 +30,14 @@ Run:
 experiment = food101_N5_S5
 python3 mainGNN.py --exp_name $experiment --dataset food-101 --test_N_way 5 --train_N_way 5 --train_N_shots 5 --test_N_shots 5 --batch_size 16  --dec_lr=10000  --iterations 80000
 ```
-
+Running baseline on food 101 Dataset:
+```
+python food101_baseline.py --dest-root <root_folder_to expr_result> --n-epoch <n_epochs> --train-img-dir <root_to_train_images> --test-img-dir <root_to_test_images> --optimizer <name_of_the_optmize_supported_by_keras> --val-img-dir <validaiton_img_root_images>
+```
+Runnig Siamese network for classificaiton
+```bash
+python few_shots_classification.py --train-img-dir <root_to_train_images> --test-img-dir <root_to_test_images>
+```
 **mini_ImageNet**
 
 Download: https://drive.google.com/file/d/0B3Irx3uQNoBMQ1FlNXJsZUdYWEE/view, 
